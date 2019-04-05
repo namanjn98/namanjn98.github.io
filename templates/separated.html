@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+
+
+<script>
+{{bool1}}
+{{bool2}}
+{{bool3}}
+{{bool4}}
+{{bool5}}
+{{bool6}}
+{{bool7}}
+{{bool8}}
+{{bool9}}
+</script>
+
+
+<div class="container">
+<div class="demo">
+
+
+
+  <!-- Include wavesurfer.js from cdn -->
+  <script src="https://unpkg.com/wavesurfer.js@2.2.1/dist/wavesurfer.min.js">
+    
+
+
+  </script>
+{% if bool1 == 1%}
+
+  <!-- Define an HTML element where the waveform should appear -->
+  <div id="waveform">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+  <script>
+     document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer1 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer1.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer1.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer1.load('../static/Data/Separated/separated_0.wav');
+  </script>
+
+  <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer1.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer1.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer1.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer1.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+<!-- ----------------------------------------------------------------------------------------- -->
+
+{% if bool2 == 1%}
+  <div id="waveform2">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  document.body.style.backgroundImage = "url('/static/img.png')";
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer2 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform2',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer2.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer2.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer2.load('../static/Data/Separated/separated_1.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer2.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer2.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer2.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer2.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+ 
+ {% endif %}
+
+  <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool3 == 1 %}
+  <div id="waveform3">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  document.body.style.backgroundImage = "url('/static/img.png')";
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer3 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform3',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer3.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer3.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer3.load('../static/Data/Separated/separated_2.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer3.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer3.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer3.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer3.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+  {% endif %}
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool4 == 1 %}
+<div id="waveform4">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  document.body.style.backgroundImage = "url('/static/img.png')";
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer4 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform4',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer4.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer4.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer4.load('../static/Data/Separated/separated_3.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer4.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer4.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer4.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer4.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool5 == 1 %}
+<div id="waveform5">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  document.body.style.backgroundImage = "url('/static/img.png')";
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer5 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform5',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer5.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer5.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer5.load('../static/Data/Separated/separated_4.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer5.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer5.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer5.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer5.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool6 == 1 %}
+<div id="waveform6">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  document.body.style.backgroundImage = "url('/static/img.png')";
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer6 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform6',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer6.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer6.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer6.load('../static/Data/Separated/separated_5.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer6.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer6.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer6.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer6.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool7 == 1 %}
+<div id="waveform7">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  document.body.style.backgroundImage = "url('/static/img.png')";
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer7 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform7',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer7.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer7.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer7.load('../static/Data/Separated/separated_6.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer7.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer7.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer7.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer7.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool8 == 1 %}
+<div id="waveform8">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  document.body.style.backgroundImage = "url('/static/img.png')";
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer8 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform8',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer8.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer8.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer8.load('../static/Data/Data/Separated/separated_7.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer8.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer8.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer8.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer8.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool9 == 1 %}
+<div id="waveform9">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  document.body.style.backgroundImage = "url('/static/img.png')";
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer9 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform9',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer9.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer9.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer9.load('../static/Data/Separated/separated_8.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer9.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer9.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primar
+    y" onclick="wavesurfer9.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer9.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+
+
+</div>
+</div>
+
+</br>
+</br>
+</br>
+</br>
+<!-- <div style="text-align: center;"> -->
+ <form action="/startover" method="post">
+          
+<div class="input submit" style="text-align: center;">
+                <input type="submit"  name = TryAgain value="BACK"></div>
+</form>
+</div>
+</html>
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+</head>
+<body background="/home/desktop/Davinder/static/images/bg2.png">
+<div class = "demo" style="text-align: center;">
+	<script src="https://unpkg.com/wavesurfer.js@2.2.1/dist/wavesurfer.min.js"></script>
+	<div id = waveform style="text-align: center;">
+		<wave style="display: block; position: relative; -moz-user-select: none; height: 128px; overflow: auto hidden;"><wave style="position: absolute; z-index: 3; left: 0px; top: 0px; bottom: 0px; overflow: hidden; width: 262px; display: block; box-sizing: border-box; border-right: 1px solid rgb(255, 255, 255); pointer-events: none;"><canvas style="position: absolute; left: 0px; top: 0px; bottom: 0px; height: 100%; width: 1110px;" width="1110" height="128"></canvas></wave><canvas style="position: absolute; z-index: 2; left: 0px; top: 0px; bottom: 0px; height: 100%; pointer-events: none; width: 1110px;" width="1110" height="128"></canvas></wave>
+	</div>
+	<progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+	<script>
+		
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer.load('../templates/sample.wav');
+  
+	</script>
+	<div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+</div>
+
+
+</body>
+</html>

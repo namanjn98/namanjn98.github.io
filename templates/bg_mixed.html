@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Independent Component Analysis</title>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../static/css/flaticon.css" />
+
+        <!-- Animate -->
+        <link rel="stylesheet" href="../static/css/animate.css">
+        <!-- Bootsnav -->
+        <link rel="stylesheet" href="../static/css/bootsnav.css">
+        <!-- Color style -->
+        <link rel="stylesheet" href="../static/css/color.css">
+
+        <!-- Custom stylesheet -->
+        <link rel="stylesheet" href="../static/css/custom.css" />
+        <!-- [if lt IE 9]> -->
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <!-- <![endif] -->
+    </head>
+    <body data-spy="scroll" data-target="#navbar-menu" data-offset="100">
+
+        <!-- Preloader --> 
+        <!-- <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                    <div class="object" id="object_five"></div>
+                    <div class="object" id="object_six"></div>
+                    <div class="object" id="object_seven"></div>
+                    <div class="object" id="object_eight"></div>
+                    <div class="object" id="object_big"></div>
+                </div>
+            </div>
+        </div> -->
+        <!--End Preloader -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-default bootsnav no-background navbar-fixed black">
+            <div class="container">  
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <!-- <ul>
+                        <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                    </ul> -->
+                </div>        
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <!-- <a class="navbar-brand" href="#"><img src="../static/images/logo.png" class="logo" alt=""></a> -->
+                </div>
+                <!-- End Header Navigation -->
+            </div>   
+
+            <!-- Start Side Menu -->
+            <div class="side">
+                <!-- <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <div class="widget">
+                    <h6 class="title">Menu</h6>
+                    <ul class="link">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div> -->
+            </div>
+            <!-- End Side Menu -->
+        </nav>
+
+        <!-- Header -->
+        <header id="hello">
+            <!-- Container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="banner">
+                            <h3>--</h3>
+                            <h1>INDEPENDENT COMPONENT ANALYSIS</h1>
+                            <!-- <br><br><br><br><br><br>    -->                         
+                            
+                            <div class="inner_banner">
+                                <div class="banner_content">
+                                    <!-- <p>A double layer of sear-sizzled 100% pure beef mingled with special sauce on a sesame seed bun and topped with melty American cheese, crisp lettuce, minced onions and tangy pickles.</p>
+                                    <p>*Based on pre-cooked patty weight.</p>		 -->	
+
+                                </div>
+                                <div class="stamp">
+                                    <!-- <img src="../static/images/stamp.png" alt="" /> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Container end -->
+            <!-- <p class="caption">*Limited Time Only</p> -->
+        </header><!-- Header end -->
+
+        <!-- Block Content -->
+        <section id="block">
+            <div class="container">
+
+                <!-- First section -->
+                <div class="row">
+                    <div class="col-sm-16">
+                       
+
+                        <!-- <div class="feature"> -->
+                            <!-- <div class="shack_burger">
+                                <div class="chicken">
+                                    <img src="../static/images/chicken.png" alt="Chicken" />
+                                </div>
+
+                                <h2>Shack Burger </h2>
+
+                                <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
+                            </div> -->
+                            <!-- <p class="caption">*Limited Time Only</p> -->
+                        <!-- </div> -->
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- <div class="signature">
+                            <div class="shape">
+                                <span class="flaticon flaticon-burger"></span>
+                                <p>signature</p>
+                            </div>
+                            <div class="signature_content">
+                                <p>It used to be a Secret but not any more! Our tribute to the King is a Cheddar Beef Patty,</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div><!-- first section end -->
+
+                <!-- Second section -->
+                <div class="row">
+                    <div class="col-md-16">
+                        <!-- <div class="classic"> -->
+                        <div>
+                            <br><br><br><br>
+                            <!-- <a href="" class="classic_btn">classic</a> -->
+                            <h1>Introduction  </h1>
+                             <p>
+                            <br>
+                            <br>
+
+
+                        ICA is a computational method for separating a multivariate signal into additive subcomponents. This is done by assuming that the subcomponents are non-Gaussian signals and that they are statistically independent from each other. A common example application is the "cocktail party problem" of listening in on one person's speech in a noisy room.
+                          <br>
+                            <br>
+                              <br>
+                            <br>
+                    </p>
+
+
+
+                    <h3>Cocktail Party Problem</h3>
+                                <!-- <p>(served in a grilled rosemary focaccia).</p> -->
+
+                                <p >
+                                     
+                            <br>
+                                    In this problem, n speakers are speaking simultaneously at a party, and any microphone placed in the room records only an overlapping combination of the n speakers’ voices. But let’s say we have n different microphones placed in the room, and because each microphone is a different distance from each of the speakers, it records a different combination of the speakers’ voices. Using these microphone recordings, can we separate out the original n speakers’ speech signals?
+
+                                  <br>
+                            <br>
+
+                        The answer is YES !!
+                    We can separate the original n speakers' speech signals using Independent Component Analysis. 
+                                   <br>
+                            <br><br></p>
+
+
+<h3>Applications of ICA : </h3>
+                                <!-- <p>(served in a grilled rosemary focaccia).</p> -->
+
+                                <p >
+                                     
+                            <br>
+                                    
+
+                                <ul >
+                                    <li><p>Audio Processing</p></li>
+                                    <li><p>Processing Medical data</p></li>
+                                    <li><p>Finance</p></li>
+                                    <li><p>Array Processing</p></li>
+                                    
+                                </ul>
+
+                            <br>
+                            <br>
+
+                         </p>
+
+
+<h3>Audio Processing </h3>
+                                <!-- <p>(served in a grilled rosemary focaccia).</p> -->
+
+                                <p >
+                                     
+                            <br>
+                                    
+
+                                We will see how ICA is able to separate different audio signals clearly from an overlapping audio. 
+
+                            <br>
+                            <br>
+
+                         </p>
+
+                            <!-- <div class="overlay_content">
+
+                                <h3>House-ground hamburger</h3>
+                                <p>(served in a grilled rosemary focaccia).</p>
+
+                                <p class="overlay_content">
+                                    Instead of traditional cucumber pickles, legendary chef-owner Judy Rodgers accents her burgers with thin-cut zucchini strips pickled in apple cider vinegar, mustard seeds and turmeric.</p>
+                            </div> -->
+                        <!-- </div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-16">
+                        <!-- Carousel -->
+                        <div id="small_carousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <!-- <ol class="carousel-indicators">
+                                <li data-target="#small_carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#small_carousel" data-slide-to="1"></li>
+                                <li data-target="#small_carousel" data-slide-to="2"></li>
+                            </ol>
+ -->
+                            <div class="carousel-caption">
+                                <!-- <h3>The Original Burger</h3> -->
+                                <!-- <hr /> -->
+
+
+
+                            
+
+
+                                <!-- <ul class="list-unstyled nutrition">
+                                    <li><a href=""><span class="flaticon flaticon-protein"></span><p>Protein - 33g</p></a></li>
+                                    <li><a href=""><span class="flaticon flaticon-carbohydrate"></span><p>Carbohydrates - 46gm</p></a></li>
+                                    <li><a href=""><span class="flaticon flaticon-calories"></span><p>Calories - 750 kcal</p></a></li>
+                                </ul> -->
+                                <!-- <div class="info_btn_shadow"> -->
+                                    <!-- <a href="" class="info_btn">info & nutrition</a> -->
+                                </div>
+                            </div>
+
+                            <!-- carousel inner -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <!-- <img src="../static/images/small_slider_bg.jpg" alt="" /> -->
+                                </div>
+                                <div class="item">
+                                    <!-- <img src="../static/images/small_slider_bg.jpg" alt="" /> -->
+                                </div>
+                                <div class="item">
+                                    <!-- <img src="../static/images/small_slider_bg.jpg" alt="" /> -->
+                                </div>
+                            </div><!-- carousel inner end -->
+                        </div><!-- Carousel end-->
+                    </div>
+                </div><!-- second section end -->
+
+                <!-- Third section -->
+                <!-- Carousel -->
+                <!-- <div id="carousel" class="carousel slide" data-ride="carousel"> -->
+                    <!-- Indicators -->
+                    <!-- <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+ -->
+                    <!-- carousel inner -->
+                    <!-- <div class="carousel-inner" role="listbox"> -->
+                        <!-- <div class="item active"> -->
+                            <!-- <img src="../static/images/large_slider_img.jpg" alt="Burger"> -->
+
+                            <!-- <div class="carousel-caption">
+                                <h2>Cheddar JUnky</h2>
+                                <h3>Stuffed Burgers</h3>
+
+                                <p>Chef Wesley Genovart makes this over-the-top, Shake Shack–inspired burger with two thin stacked patties, thick-cut bacon, kimchi and a spicy homemade sauce.</p>
+
+                                <div class="info_btn_shadow">
+                                    <a href="" class="info_btn">info & nutrition</a>
+                                </div>
+                            </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="item">
+                            <img src="../static/images/large_slider_img.jpg" alt="Burger">
+
+                            <div class="carousel-caption">
+                                <h2>Cheddar JUnky</h2>
+                                <h3>Stuffed Burgers</h3>
+
+                                <p>Chef Wesley Genovart makes this over-the-top, Shake Shack–inspired burger with two thin stacked patties, thick-cut bacon, kimchi and a spicy homemade sauce.</p>
+
+                                <div class="info_btn_shadow">
+                                    <a href="" class="info_btn">info & nutrition</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../static/images/large_slider_img.jpg" alt="Burger">
+
+                            <div class="carousel-caption">
+                                <h2>Cheddar JUnky</h2>
+                                <h3>Stuffed Burgers</h3>
+
+                                <p>Chef Wesley Genovart makes this over-the-top, Shake Shack–inspired burger with two thin stacked patties, thick-cut bacon, kimchi and a spicy homemade sauce.</p>
+
+                                <div class="info_btn_shadow">
+                                    <a href="" class="info_btn">info & nutrition</a>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- </div>carousel inner end -->
+                <!-- </div> Carousel end -->
+
+                <!-- Forth section -->
+               <!--  <div class="row forth_sec">
+                    <div class="col-sm-4"> -->
+
+
+<!-- ============================================================================================== -->
+
+
+
+<!-- ============================================================================================== -->
+
+
+                        <!-- <div class="menu">
+                            <div class="inner_content">
+                                <span class="flaticon flaticon-burger"></span>
+                                <h2>menu</h2>
+                            </div>
+                        </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="col-sm-4">
+                        <div class="drinks">
+                            <div class="inner_content">
+                                <span class="flaticon flaticon-drink"></span>
+                                <h2>drinks</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="sides">
+                            <div class="inner_content">
+                                <span class="flaticon flaticon-food"></span>
+                                <h2>sides</h2>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+                <!-- forth section end
+            </div>
+        </section><!- Block Content end-->
+
+
+
+
+
+
+        <secion>
+
+            <!-------------------------------------------------------------------------------------->
+<script>
+{{bool1}}
+{{bool2}}
+{{bool3}}
+{{bool4}}
+{{bool5}}
+{{bool6}}
+{{bool7}}
+{{bool8}}
+{{bool9}}
+</script>
+
+
+<div class="container">
+<div class="demo">
+
+
+
+  <!-- Include wavesurfer.js from cdn -->
+  <script src="https://unpkg.com/wavesurfer.js@2.2.1/dist/wavesurfer.min.js"></script>
+{% if bool1 == 1%}
+  <div id="waveform1">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  // document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer1 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform1',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer1.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer1.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer1.load('../static/Data/Mixed/mixed_ghanta_simple.wav');
+  </script>
+
+  <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer1.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer1.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer1.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer1.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+<!-- ----------------------------------------------------------------------------------------- -->
+
+{% if bool2 == 1%}
+  <div id="waveform2">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  // document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer2 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform2',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer2.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer2.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer2.load('../static/Data/Mixed/mixed_1_simple.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer2.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer2.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer2.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer2.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+ 
+ {% endif %}
+
+  <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool3 == 1 %}
+  <div id="waveform3">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  // document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer3 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform3',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer3.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer3.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer3.load('../static/Data/Mixed/mixed_2_simple.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer3.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer3.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer3.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer3.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+  {% endif %}
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool4 == 1 %}
+<div id="waveform4">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  // document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer4 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform4',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer4.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer4.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer4.load('../static/Data/Mixed/mixed_3_simple.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer4.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer4.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer4.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer4.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool5 == 1 %}
+<div id="waveform5">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  // document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer5 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform5',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer5.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer5.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer5.load('../static/Data/Mixed/mixed_4_simple.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer5.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer5.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer5.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer5.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool6 == 1 %}
+<div id="waveform6">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  // document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer6 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform6',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer6.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer6.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer6.load('../static/Data/Mixed/mixed_5_simple.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer6.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer6.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer6.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer6.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool7 == 1 %}
+<div id="waveform7">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  // document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer7 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform7',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer7.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer7.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer7.load('../static/Data/Mixed/mixed_6_simple.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer7.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer7.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer7.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer7.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool8 == 1 %}
+<div id="waveform8">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  // document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer8 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform8',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer8.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer8.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer8.load('../static/Data/Mixed/mixed_7_simple.wav');
+  </script>
+
+ <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer8.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer8.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer8.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer8.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+ <!--------------------------------------------------------------------------------------------------  -->
+  {% if bool9 == 1 %}
+<div id="waveform9">
+    <progress id="progress" class="progress progress-striped" value="100" max="100" style="display: none;"></progress>
+ </div>
+
+ <script>
+  // document.body.style.backgroundImage = "url('/static/img.png')"; 
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+
+    var wavesurfer9 = WaveSurfer.create({
+      // Use the id or class-name of the element you created, as a selector
+      container: '#waveform9',
+      // The color can be either a simple CSS color or a Canvas gradient
+      waveColor: linGrad,
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // This parameter makes the waveform look like SoundCloud's player
+      barWidth: 3
+    });
+
+    wavesurfer9.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+
+    wavesurfer9.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+
+    wavesurfer9.load('../static/Data/Mixed/mixed_8_simple.wav');
+  </script>
+
+ <div class="controls"  style="text-align: center;">
+    <button class="btn btn-primary" onclick="wavesurfer9.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Backward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer9.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pause
+    </button>
+
+    <button class="btn btn-primar
+    y" onclick="wavesurfer9.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Forward
+    </button>
+
+    <button class="btn btn-primary" onclick="wavesurfer9.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Toggle Mute
+    </button>
+  </div>
+
+{% endif %}
+
+
+
+
+</div>
+</div>
+
+</br>
+</br>
+</br>
+</br>
+<!-- <div style="text-align: center;"> -->
+    <h3>
+ <form action="/final" method="post">
+      
+<div class="input submit" style="text-align: center;">
+    <style scoped>
+
+        .button-success,
+ {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+    </style>
+
+                <input class="button-success" type="submit" name = separate  value="separate"></div>
+</form>
+</h3>
+</div>
+
+        </secion>
+
+
+        <!-- Lock -->
+        <section id="lock">
+            <!-- <h2>Merged Audio</h2> -->
+            <!-- <p>Check out our opening hours and location address below.</p> -->
+        </section>
+
+<section>
+    <div class="container">
+       <div class="row forth_sec">
+                    <div class="col-sm-4">
+            <!-- <h2>Merged Audio</h2> -->
+            <!-- <p>Check out our opening hours and location address below.</p> -->
+        </div>
+    </div>
+    </div>
+        </section>
+
+
+
+        <!-- Map -->
+        <!-- <div id="ourmaps"></div> -->
+
+        <!-- Footer -->
+        <footer>
+            <!-- Container -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
+                        <div class="subscribe">
+                            <!-- <h4>Subscribe now</h4> -->
+                            <!-- <p>Subscribe to the newsletter and -->
+                                <!-- get some crispy stuff every week.</p> -->
+
+                            <!-- <form role="form">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" id="em" placeholder="Enter your e-mail here">
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn send_btn">
+                                                <i class="glyphicon glyphicon-send"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form> -->
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
+                        <div class="contact_us">
+                            <!-- <h4>Contact Us</h4>
+                            <a href="">info@junkyburget.com</a> -->
+
+                            <!-- <address>
+                                Jalan Awan Hijau, Taman OUG<br />
+                                58200 Kuala Lumpur <br />
+                                Malaysia <br />
+                            </address> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-xs-12 pull-right">
+                        <div class="basic_info">
+                           <!--  <a href=""><img class="footer_logo" src="../static/images/footer_logo.png" alt="Burger" /></a> -->
+
+                           <!--  <ul class="list-inline social">
+                                <li><a href="" class="fa fa-facebook"></a></li>
+                                <li><a href="" class="fa fa-twitter"></a></li>
+                                <li><a href="" class="fa fa-instagram"></a></li>
+                            </ul> -->
+
+                            <!-- <div class="footer-copyright">
+                                <p class="wow fadeInRight" data-wow-duration="1s">
+                                    Made with 
+                                    <i class="fa fa-heart"></i>
+                                    by 
+                                    <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> <br /> 
+                                    2016. All Rights Reserved
+                                </p>
+                            </div>				 -->	
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- Container end -->
+        </footer><!-- Footer end -->
+
+
+        <!-- scroll up-->
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div><!-- End off scroll up->
+
+        <!- JavaScript -->
+        <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>		
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- Bootsnav js -->
+        <script src="../static/js/bootsnav.js"></script>
+
+        <!-- JS Implementing Plugins -->
+        
+
+       
+
+
+        <!--main js-->
+        <script type="text/javascript" src="../static/js/main.js"></script>
+    </body>	
+</html>	
