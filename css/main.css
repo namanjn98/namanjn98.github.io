@@ -28,7 +28,7 @@ img {
 
 .intro > h1 {
     color: #212121;
-    font-size: 12vh;
+    font-size: 6vh;
 }
 
 .intro > h2 {
@@ -45,9 +45,25 @@ img {
 /* Profile picture */
 
 .profile {
-    width: 10vh;
-    height: 10vh;
+    width: 30vh;
+    height: 30vh;
     border-radius: 50%;
+    /*top:10px;
+    left:170px;*/
+}
+
+a.button {
+  background-color: white;
+  color: black;
+  border: 1px solid #CF4647;
+}
+
+a.button:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+
 }
 
 /* Colored links */
@@ -61,7 +77,7 @@ a.icon:hover {
 }
 
 a:hover {
-    color: var(--accent) !important;
+    color: var(--accent);
 }
 
 /* Copyright message */

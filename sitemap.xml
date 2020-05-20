@@ -39,10 +39,6 @@
   </url>
   
   <url>
-    <loc>https://namanjn98.github.io/about/</loc>
-  </url>
-  
-  <url>
     <loc>https://namanjn98.github.io/tags/bootstrap/</loc>
     <priority>0</priority>
   </url>
@@ -61,6 +57,10 @@
     <loc>https://namanjn98.github.io/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://namanjn98.github.io/experience/</loc>
   </url>
   
   <url>
@@ -117,6 +117,10 @@
   <url>
     <loc>https://namanjn98.github.io/project/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://namanjn98.github.io/publications/</loc>
   </url>
   
   <url>
