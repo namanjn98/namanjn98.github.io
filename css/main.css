@@ -52,20 +52,6 @@ img {
     left:170px;*/
 }
 
-a.button {
-  background-color: white;
-  color: black;
-  border: 1px solid #CF4647;
-}
-
-a.button:hover {
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  border: 1px solid black;
-
-}
-
 /* Colored links */
 
 a:link, a:visited {
